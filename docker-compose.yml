@@ -1,0 +1,35 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserverApi
+    environment:
+      SA_PASSWORD: "Senhaforte123456"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+#      - sqlserver-data:/var/opt/mssql
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bibliotecaApi
+    depends_on:
+      sqlserver:
+        condition: service_started
+    environment:
+      QUARKUS_DATASOURCE_USERNAME: sa
+      QUARKUS_DATASOURCE_PASSWORD: Senhaforte123456
+      QUARKUS_DATASOURCE_JDBC_URL: jdbc:sqlserver://sqlserverApi:1433;databaseName=biblioteca_db;encrypt=true;trustServerCertificate=true
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./src:/project/src
+      - ./pom.xml:/project/pom.xml
+    restart: unless-stopped
+
+volumes:
+  sqlserver-data:
