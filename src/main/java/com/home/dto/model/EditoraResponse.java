@@ -1,4 +1,4 @@
 package com.home.dto.model;
 
-public record EditoraResponse (Long id, String nomeEditora) {
+public record EditoraResponse (Long id, String nomeEditora, String uf) {
 }
