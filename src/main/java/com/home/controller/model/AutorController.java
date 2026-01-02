@@ -1,7 +1,7 @@
 package com.home.controller.model;
 
-import com.home.dto.model.AutorRequest;
-import com.home.dto.model.AutorResponse;
+import com.home.dto.model.request.AutorRequest;
+import com.home.dto.model.response.AutorResponse;
 import com.home.service.model.AutorService;
 import jakarta.inject.Inject;
 import jakarta.validation.Valid;

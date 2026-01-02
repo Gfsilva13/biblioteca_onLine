@@ -1,7 +1,7 @@
 package com.home.controller.model;
 
-import com.home.dto.model.EditoraRequest;
-import com.home.dto.model.EditoraResponse;
+import com.home.dto.model.request.EditoraRequest;
+import com.home.dto.model.response.EditoraResponse;
 import com.home.service.model.EditoraService;
 import jakarta.inject.Inject;
 import jakarta.validation.Valid;

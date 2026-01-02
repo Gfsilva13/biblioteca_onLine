@@ -1,7 +1,7 @@
 package com.home.mapper.model;
 
-import com.home.dto.model.LeitorRequest;
-import com.home.dto.model.LeitorResponse;
+import com.home.dto.model.request.LeitorRequest;
+import com.home.dto.model.response.LeitorResponse;
 import com.home.entity.model.Leitor;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

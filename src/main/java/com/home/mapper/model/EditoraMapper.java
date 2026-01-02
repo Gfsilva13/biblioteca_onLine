@@ -1,7 +1,7 @@
 package com.home.mapper.model;
 
-import com.home.dto.model.EditoraRequest;
-import com.home.dto.model.EditoraResponse;
+import com.home.dto.model.request.EditoraRequest;
+import com.home.dto.model.response.EditoraResponse;
 import com.home.entity.model.Editora;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

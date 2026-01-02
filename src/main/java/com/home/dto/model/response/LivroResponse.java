@@ -1,4 +1,4 @@
-package com.home.dto.model;
+package com.home.dto.model.response;
 
 import com.home.entity.model.Autor;
 import com.home.entity.model.Categoria;

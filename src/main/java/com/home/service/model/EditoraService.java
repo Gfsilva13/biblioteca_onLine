@@ -1,7 +1,7 @@
 package com.home.service.model;
 
-import com.home.dto.model.EditoraResponse;
-import com.home.dto.model.EditoraRequest;
+import com.home.dto.model.request.EditoraRequest;
+import com.home.dto.model.response.EditoraResponse;
 import com.home.entity.model.Editora;
 import com.home.mapper.model.EditoraMapper;
 import com.home.repository.model.EditoraRepository;

@@ -1,7 +1,7 @@
 package com.home.service.model;
 
-import com.home.dto.model.CategoriaRequest;
-import com.home.dto.model.CategoriaResponse;
+import com.home.dto.model.request.CategoriaRequest;
+import com.home.dto.model.response.CategoriaResponse;
 import com.home.entity.model.Categoria;
 import com.home.mapper.model.CategoriaMapper;
 import com.home.repository.model.CategoriaRepository;

@@ -1,7 +1,7 @@
 package com.home.mapper.model;
 
-import com.home.dto.model.LivroRequest;
-import com.home.dto.model.LivroResponse;
+import com.home.dto.model.request.LivroRequest;
+import com.home.dto.model.response.LivroResponse;
 import com.home.entity.model.Livro;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

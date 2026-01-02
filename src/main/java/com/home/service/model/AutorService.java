@@ -1,7 +1,7 @@
 package com.home.service.model;
 
-import com.home.dto.model.AutorRequest;
-import com.home.dto.model.AutorResponse;
+import com.home.dto.model.request.AutorRequest;
+import com.home.dto.model.response.AutorResponse;
 import com.home.entity.model.Autor;
 import com.home.mapper.model.AutorMapper;
 import com.home.repository.model.AutorRepository;
