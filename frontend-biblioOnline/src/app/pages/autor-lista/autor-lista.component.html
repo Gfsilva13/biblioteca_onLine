@@ -1,0 +1,25 @@
+<h2>Relação de Autores</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Nome do Autor</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let autor of autores">
+      <td>{{ autor.id }}</td>
+      <td>{{ autor.nomeAutor}}</td>
+      <td>
+        <button (click)="editar(autor.id)">Editar</button>
+        <button (click)="excluir(autor.id)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<button (click)="novo()">Novo Autor</button>
+
+

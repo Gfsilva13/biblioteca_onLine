@@ -1,0 +1,14 @@
+<h2>{{ edicao ? 'Editar Categoria' : 'Nova Categoria' }}</h2>
+
+<form [formGroup]="form" (ngSubmit)="salvar()">
+  <div>
+    <label>Nome da Categoria</label>
+    <input formControlName="categoria" />
+    <div *ngIf="form.get('categoria')?.touched && form.get('categoria')?.invalid">
+      Categoria é obrigatória
+    </div>
+  </div>
+
+  <button type="submit">{{ edicao ? 'Atualizar' : 'Cadastrar' }}</button>
+  <button type="button" (click)="voltar()">Voltar</button>
+</form><p>categoria-form works!</p>

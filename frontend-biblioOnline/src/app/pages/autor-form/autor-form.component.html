@@ -1,0 +1,17 @@
+<h2>{{ edicao ? 'Editar Autor' : 'Novo Autor' }}</h2>
+
+<form [formGroup]="form" (ngSubmit)="salvar()">
+  <div>
+    <label>Nome do Autor</label>
+    <input formControlName="nomeAutor" />
+    <div *ngIf="form.get('nomeAutor')?.touched && form.get('nomeAutor')?.invalid">
+      O nome é obrigatório
+    </div>
+  </div>
+
+  <button type="submit">{{ edicao ? 'Atualizar' : 'Cadastrar' }}</button>
+  <button type="button" (click)="voltar()">Voltar</button>
+</form>
+
+
+
