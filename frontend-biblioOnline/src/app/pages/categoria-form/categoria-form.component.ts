@@ -26,7 +26,7 @@ export class CategoriaFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      nomeAutor: ['', Validators.required]
+      categoria: ['', Validators.required]
     });
 
     this.id = Number(this.route.snapshot.paramMap.get('id'));
@@ -34,7 +34,7 @@ export class CategoriaFormComponent implements OnInit {
     if (this.id) {
       this.edicao = true;
       this.service.buscarPorId(this.id).subscribe({
-        next: (categoria) => this.form.patchValue({catgoria: categoria.categoria}),
+        next: (categoria) => this.form.patchValue({categoria: categoria.categoria}),
         error: () => alert
       });
     }

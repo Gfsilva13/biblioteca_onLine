@@ -44,5 +44,9 @@ export class AutorListaComponent implements OnInit {
       });
     }
   }
+
+  voltar(): void {
+    this.router.navigate(['/home']);
+  }
 }
 

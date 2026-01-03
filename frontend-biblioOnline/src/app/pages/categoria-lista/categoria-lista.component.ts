@@ -44,6 +44,10 @@ export class CategoriaListaComponent implements OnInit {
       });
     }
   }
+
+  voltar(): void {
+    this.router.navigate(['/home']);
+  }
 }
 
 
